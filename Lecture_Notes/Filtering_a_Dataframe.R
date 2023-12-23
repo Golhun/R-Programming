@@ -18,3 +18,14 @@ stats[filter_birth,]
 
 # Filtering countries with internet users less than 2 and birth rate over 40
 stats[filter_birth & filter_internet,]
+
+
+# Filtering cuntries by income groups => countries with high income
+filter_income <- stats$Income.Group == "High income"
+stats[filter_income,]
+levels(stats$Income.Group)
+
+# Searching for my home country Ghana :)
+# [stats$Country.Name == "Ghana",]
+
+

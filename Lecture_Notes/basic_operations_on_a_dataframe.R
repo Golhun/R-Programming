@@ -1,9 +1,12 @@
+setwd("~/Documents/High_Level_Programming/R-Programming/R-Programming_Course/Lecture_Notes")
+stats <- read.csv("P2-Demographic-Data.csv")
 str(stats)
+# Basic Operations with a data frame (DF)
 
-#
-$ Basic Operations with a data frame (DF)
+#Subsettin gthe data frame
+stats[1:10,] #first 10 rows and all the columns
 
-stats[1:10,]
+
 head(stats, n=10)
 stats[c(4, 10),]
 # remember how the square  brackets work
